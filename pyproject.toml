@@ -1,14 +1,20 @@
 [tool.poetry]
-name = "template-poetry"
+name = "eo-data-stac-streamlit"
 version = "0.1.0"
-description = "This project serves as a template for initialising new Python projects with Poetry, including basic configuration for dependency management and virtual environment setup. It is designed to be cloned for quick setup of new repositories on GitHub."
+description = "A Streamlit interface for STAC-based EO data exploration"
 authors = ["ediakatos <ediakatos@mapaction.org>"]
 license = "GPL-3.0-only"
 readme = "README.md"
+package-mode = false
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
 pystac-client = "^0.8.6"
+planetary-computer = "^1.0.0"
+geopandas = "^1.0.1"
+numpy = "<2.0"
+streamlit = "^1.44.1"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.8.0"
