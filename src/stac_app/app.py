@@ -26,7 +26,11 @@ def render_logo_and_title() -> None:
     """Render the logo and title of the app."""
     st.image("src/stac_app/assets/MA-logo.png", width=250)
     st.title("Satellite Data Downloader")
-    st.write("Easily search and download satellite imagery files.")
+    st.write("Easily search and download satellite imagery from the Microsoft Planetary Computer.\n\n"  # noqa: E501
+             "**Currently supports:**\n"
+             "- Sentinel-2 L2A (true color)\n"
+             "- Sentinel-1 RTC (SAR, VV/VH polarizations)\n\n"
+             )
     st.markdown("<hr>", unsafe_allow_html=True)
 
 def render_instructions() -> None:
