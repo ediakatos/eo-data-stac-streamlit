@@ -8,9 +8,10 @@ from datetime import datetime, timezone
 
 import streamlit as st
 from streamlit.runtime.uploaded_file_manager import UploadedFile
-from streamlit.utils.download_links import display_download_links
-from streamlit.utils.geojson_utils import extract_bbox
-from streamlit.utils.stac_search import (
+
+from stac_app.utils.download_links import display_download_links
+from stac_app.utils.geojson_utils import extract_bbox
+from stac_app.utils.stac_search import (
     search_sar_items,
     search_truecolor_items,
 )

@@ -2,9 +2,9 @@
 
 from argparse import Namespace
 
+import streamlit as st
 from planetary_computer import sign
 
-import streamlit as st
 from utils.utils import search_items
 
 
