@@ -24,6 +24,10 @@ clean:
 	@rm -rf .venv
 	@poetry env remove --all
 
+app:
+	@echo "Running Streamlit app..."
+	@PYTHONPATH=. poetry run streamlit run src/streamlit/app.py
+
 help:
 	@echo "Available make commands for setup:"
 	@echo " make help           - Print help"
