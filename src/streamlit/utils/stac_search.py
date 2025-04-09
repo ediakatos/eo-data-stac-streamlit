@@ -5,7 +5,7 @@ from argparse import Namespace
 from planetary_computer import sign
 
 import streamlit as st
-from src.utils.utils import search_items
+from utils.utils import search_items
 
 
 def search_truecolor_items(

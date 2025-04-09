@@ -7,13 +7,13 @@ including UI components and search functionality.
 from datetime import datetime, timezone
 
 import streamlit as st
-from src.streamlit.utils.download_links import display_download_links
-from src.streamlit.utils.geojson_utils import extract_bbox
-from src.streamlit.utils.stac_search import (
+from streamlit.runtime.uploaded_file_manager import UploadedFile
+from streamlit.utils.download_links import display_download_links
+from streamlit.utils.geojson_utils import extract_bbox
+from streamlit.utils.stac_search import (
     search_sar_items,
     search_truecolor_items,
 )
-from streamlit.runtime.uploaded_file_manager import UploadedFile
 
 st.set_page_config(
     page_title="Satellite Data Downloader",
