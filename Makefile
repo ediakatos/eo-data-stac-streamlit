@@ -26,7 +26,7 @@ clean:
 
 app:
 	@echo "Running Streamlit app..."
-	@PYTHONPATH=. poetry run streamlit run src/streamlit/app.py
+	@PYTHONPATH=. poetry run streamlit run src/stac_app/app.py
 
 help:
 	@echo "Available make commands for setup:"
