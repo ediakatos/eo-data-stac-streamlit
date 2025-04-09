@@ -5,9 +5,8 @@ description = "A Streamlit interface for STAC-based EO data exploration"
 authors = ["ediakatos <ediakatos@mapaction.org>"]
 license = "GPL-3.0-only"
 readme = "README.md"
-package-mode = true
 
-[tool.poetry.packages]
+[[tool.poetry.packages]]
 include = "streamlit"
 from = "src"
 
