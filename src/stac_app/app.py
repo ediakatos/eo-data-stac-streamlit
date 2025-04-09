@@ -18,13 +18,13 @@ from stac_app.utils.stac_search import (
 
 st.set_page_config(
     page_title="Satellite Data Downloader",
-    page_icon="src/streamlit/assets/MA-logo.png",
+    page_icon="src/stac_app/assets/MA-logo.png",
     layout="wide",
 )
 
 def render_logo_and_title() -> None:
     """Render the logo and title of the app."""
-    st.image("src/streamlit/assets/MA-logo.png", width=250)
+    st.image("src/stac_app/assets/MA-logo.png", width=250)
     st.title("Satellite Data Downloader")
     st.write("Easily search and download satellite imagery files.")
     st.markdown("<hr>", unsafe_allow_html=True)
