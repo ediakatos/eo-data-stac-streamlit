@@ -7,7 +7,7 @@ license = "GPL-3.0-only"
 readme = "README.md"
 
 [[tool.poetry.packages]]
-include = "streamlit"
+include = "stac_app"
 from = "src"
 
 [tool.poetry.dependencies]
