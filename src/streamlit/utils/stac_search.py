@@ -68,7 +68,7 @@ def search_sar_items(
         cloud_cover=None,
     )
 
-    # 2. Perform the search using your existing utility
+    # 2. Perform the search
     items = search_items(args)
 
     if not items:
